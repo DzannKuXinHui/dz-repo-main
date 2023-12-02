@@ -1,0 +1,497 @@
+
+.Page-name {
+    text-align: center;
+    font-family: monospace;
+  }
+  .navbar {
+      background-color: rgb(47, 47, 47);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      border-radius: 15px;
+  }
+  
+  .navItem {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 20px;
+      font-size: 20px;
+  }
+  
+  .navItem a {
+      text-decoration: none;
+      color: rgb(201, 163, 245);
+      padding: 20px;
+      font-family: monospace;
+      font-weight: lighter;
+  }
+  
+  .navItem a:hover {
+      background-color: white;
+      color: black;
+  }
+  
+  h3{
+      text-align: center;
+      font-size: 30px;
+      font-family: monospace;
+  }
+  
+  .images-NewRelease{
+      background-color: transparent;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+      justify-content: center;
+  }
+  
+  .images-NewRelease img{
+      width: 250px;
+      height: 250px;
+      padding: 10px;
+  }
+  
+  .images-BestSellers {
+      background-color: transparent;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+      display: flex;
+  }
+    
+  .image-best {
+      display: inline;
+      position: relative;
+      width: 420px;
+      margin-right: 10px;
+  }
+    
+  .image-best img {
+      width: 400px;
+      height: 400px;
+      object-fit: fill;
+  }
+    
+  .overlay-best {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(201, 163, 245, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+    
+  .overlay-best p {
+      color: white;
+      text-align: center;
+      margin: 5px 0;
+  }
+    
+  .image-best:hover .overlay-best {
+      opacity: 1;
+  }
+  
+  .images-ShopCategories{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 660px;
+      justify-content: center;
+  }
+  
+  .category-box {
+      display: block;
+  }
+  
+  .image-box img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      
+  }
+  
+  .text-box p {
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  
+  .shop-categories-wrapper {
+    max-width: 2000px;
+    margin: 55px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    width: 33.33%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 10px;
+  }
+  
+  .featured-box {
+    border: 2px solid rgb(201, 163, 245);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+  }
+  
+  .categories-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border: none;
+  }
+  
+  .email-submit{
+      text-align: center;
+  }
+  
+  .email-submit p{
+      color: gray;
+      font-family: monospace;
+      font-size: 12px;
+  }
+  
+  
+  .email-submit h2{
+      font-family: monospace;
+      font-size: 25px;
+      font-weight: 50;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+      border: 1px solid rgb(201, 163, 245);
+      padding: 8px;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  input[type="submit"] {
+      cursor: pointer;
+  }
+  
+  input[value="email@example.com"] {
+      color: rgb(195, 195, 195);
+  }
+  
+  .slideshow {
+      position: relative;
+      width: 100vh;
+      height: 300px;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    .slides {
+      display: block;
+      width: 100vh;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    .Mug-Title {
+      text-align: center;
+      font-family: monospace;
+      font-size: 50px;
+  }
+  
+  .mugs-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .image-item {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .image-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(201, 163, 245, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .overlay p {
+      color: white;
+      text-align: center;
+      margin: 5px 0;
+  }
+  
+  .image-item:hover .overlay {
+      opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .About-Title {
+      text-align: center;
+      font-family: monospace;
+      font-size: 50px;
+      
+  }
+  
+  .me-image {
+      text-align: center;
+  }
+  
+  .image-pic {
+      display: inline-block; 
+      position: relative;
+  }
+  
+  .image-pic img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 2px solid black;
+  }
+  
+  .overlay-me {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .image-pic:hover .overlay-me {
+      opacity: 1;
+  }
+  
+  .words-details{
+      text-align: center;
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 20px;
+  }
+  
+  .details{
+      padding: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .Promo-Title {
+      font-family: monospace;
+      font-size: 50px;
+      color: rgb(253, 66, 104);
+      text-align: center;
+  }
+  
+  .promo-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .image-item {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .image-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .overlay p {
+      color: white;
+      text-align: center;
+      margin: 5px 0;
+  }
+  
+  .image-item:hover .overlay {
+      opacity: 1;
+  }
+  
+  .overlay h4,
+  .overlay p {
+      display: block;
+      flex-direction: column;
+      margin: 10px 5px;
+  
+  }
+  
+  .overlay h4{
+      font-size: 15px;
+      color: white;
+      font-weight: 100;
+  }
+  
+  .overlay p{
+      padding-top: 20px;
+      color: rgb(255, 95, 135);
+  }
+  
+  @media screen and (max-width: 768px) {
+      .promo-images {
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .overlay {
+          width: 100%;
+      }
+      .mugs-images {
+          grid-template-columns: repeat(1, 1fr);
+      }
+  
+      .overlay {
+          width: 100%;
+      }
+      .grid-item {
+          width: 50%;
+        }
+        .slideshow {
+          position: relative;
+          width: 100vw;
+          height: 25vh;
+          margin: auto;
+          overflow: hidden;
+        }
+        
+        .slides {
+          display: block;
+          width: 100vw;
+          height: 20vh;
+        }
+  }
+  

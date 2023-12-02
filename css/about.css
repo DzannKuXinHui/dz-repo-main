@@ -1,0 +1,117 @@
+.Page-name {
+    text-align: center;
+    font-family: monospace;
+}
+
+.navbar {
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.navItem {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: rgb(201, 163, 245);
+    padding: 20px;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+.navItem a:hover {
+    background-color: white;
+    color: black;
+}
+
+.About-Title {
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    
+}
+
+.me-image {
+    text-align: center;
+}
+
+.image-item {
+    display: inline-block; 
+    position: relative;
+}
+
+.image-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-item:hover .overlay {
+    opacity: 1;
+}
+
+.words-details{
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.details{
+    padding: 20px;
+}
+
+.email-submit{
+    text-align: center;
+}
+
+.email-submit p{
+    color: gray;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+
+.email-submit h2{
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 50;
+}
+
+input[type="text"],
+input[type="submit"] {
+    border: 1px solid rgb(201, 163, 245);
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="submit"] {
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[value="email@example.com"] {
+    color: rgb(195, 195, 195);
+}
